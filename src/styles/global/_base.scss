@@ -1,0 +1,41 @@
+img {
+  width: 100%;
+  display: block;
+}
+/**
+ * HELPERS
+ */
+
+// Flexbox
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.items-center {
+  align-items: center;
+}
+
+// Text
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
