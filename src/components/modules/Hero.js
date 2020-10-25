@@ -9,12 +9,12 @@ export default function Hero() {
           <ProductDescription />
         </section>
         <section className="Hero__inner Hero__inner--splash">
-          <img src="/images/top/highwaist_black_front_2_1024x1024.jpg"></img>
-          <img src="/images/top/highwaist_black_front_3_1024x1024.jpg"></img>
-          <img src="/images/top/highwaist_black_front_4_1024x1024.jpg"></img>
-          <img src="/images/top/highwaist_black_front_1024x1024.jpg"></img>
-          <img src="/images/top/highwaist_black_side_1024x1024.jpg"></img>
-          <img src="/images/top/highwaist_black_back_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_front_2_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_front_3_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_front_4_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_front_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_side_1024x1024.jpg"></img>
+          <img className="Hero__splash-image" src="/images/top/highwaist_black_back_1024x1024.jpg"></img>
         </section>
         <section className="Hero__inner Hero__inner--cta">
           <ProductSale />

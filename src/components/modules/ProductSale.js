@@ -9,9 +9,9 @@ export default function ProductSale() {
       <h3 className="Product__cost">$35.00</h3>
       <ul className="Product__color-picker Product__options flex">
         <li className="Product__color Product__color-header tc">Color</li>
-        <li className="Product__color tc">
+        <li className="Product__color Product__color--black tc">
           <button
-            className={classnames("Product__color-button Product__color-button--black", {
+            className={classnames("Product__color-button", {
               active: productColor === 'black'
             })}
             onClick={() => {
@@ -19,9 +19,9 @@ export default function ProductSale() {
             }}
           >black</button>
         </li>
-        <li className="Product__color tc">
+        <li className="Product__color Product__color--beige tc">
           <button
-            className={classnames("Product__color-button Product__color-button--beige", {
+            className={classnames("Product__color-button", {
               active: productColor === 'beige'
             })}
             onClick={() => {

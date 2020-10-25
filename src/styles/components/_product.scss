@@ -17,10 +17,6 @@
   }
   &__color {
     width: 33%;
-  }
-  &__color-button {
-    width: 100%;
-    height: 100%;
     &--black {
       background-color: color('black');
       color: color('white');
@@ -28,10 +24,19 @@
     &--beige {
       background-color: color('beige');
     }
+  }
+  &__color-button {
+    width: 100%;
+    height: 100%;
     &.active {
       &:after {
         content: ' ✓';
       }
+    }
+  }
+  &__size {
+    &-button {
+      width: 2rem;
     }
   }
 }
