@@ -31,26 +31,41 @@ export default function ProductSale() {
         </li>
       </ul>
       <ul className="Product__quantity-picker Product__options flex">
-        <li className="Product__size">
+        <li className="Product__quantity">
           <button
-            className="Product__size-button"
+            className="Product__quantity-button"
             onClick={() => {
               setProductQuantity(Math.max(productQuantity - 1, 1));
             }}
           >-</button>
         </li>
-        <li className="Product__size flex-grow tc">
+        <li className="Product__quantity flex-grow tc">
           quantity ({productQuantity})
         </li>
         <li
-          className="Product__size"
+          className="Product__quantity"
           onClick={() => {
             setProductQuantity(productQuantity + 1);
           }}
         >
-          <button className="Product__size-button">+</button>
+          <button className="Product__quantity-button">+</button>
         </li>
       </ul>
+      <ul className="Product__size">
+        <li className="Product__size-button-wrapper">
+          <button className="Product__size-button flex justify-between">
+            <span>size</span>
+            <span className="Product__size-chevron">V</span>
+          </button>
+        </li>
+      </ul>
+      <div className="Product__question">
+        <a href="#" className="Product__question-link">what's my size?</a>
+      </div>
+      <button className="Product__purchase">add to cart</button>
+      <div className="Product__additional tc">
+        <a href="#" className="Product__additional-link">build a cycle set and save up to 20%</a>
+      </div>
     </div>
   );
 };
