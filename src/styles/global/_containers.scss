@@ -2,7 +2,15 @@
 // Container Elements
 //
 .Container {
-  width: calc(100vw - 2rem);
-  max-width: 72rem;
+  width: calc(100vw - 4rem);
+  max-width: 32rem;
   margin: 0 auto;
+  @media (query(lg-up)) {
+    max-width: 72rem;
+  }
+  &--thin {
+    @media (query(lg-up)) {
+      max-width: 54rem;
+    }
+  }
 }

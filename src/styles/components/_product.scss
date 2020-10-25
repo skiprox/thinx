@@ -1,7 +1,11 @@
 .Product {
-  height: 100vh;
+  @media (query(lg-up)) {
+    height: 100vh;
+  }
   &__description {
-    max-width: 16.5rem;
+    @media (query(lg-up)) {
+      max-width: 16.5rem;
+    }
   }
   &__options {
     > li {

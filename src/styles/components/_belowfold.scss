@@ -1,0 +1,34 @@
+.BelowFold {
+  margin-bottom: 3rem;
+  > .Container {
+    flex-direction: column;
+    @media (query(lg-up)) {
+      flex-direction: row;
+    }
+  }
+  &__item {
+    margin-top: 3rem;
+  }
+  &__link {
+    display: inline-block;
+    margin-top: 1rem;
+    line-height: 1;
+    border-bottom: 1px solid color('black');
+  }
+  &__description {
+    margin-top: 0.5rem;
+  }
+  &__image {
+    width: 100%;
+    &--medium {
+      @media (query(lg-up)) {
+        max-width: 432px;
+      }
+    }
+    &--small {
+      @media (query(lg-up)) {
+        max-width: 288px;
+      }
+    }
+  }
+}
