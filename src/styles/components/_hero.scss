@@ -8,12 +8,6 @@
       height: 100vh;
       position: sticky;
       top: 0;
-      &__content {
-        flex-direction: column;
-      }
-    }
-    &--centered {
-      height: 100vh;
     }
   }
 }

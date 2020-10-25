@@ -13,6 +13,9 @@ img {
 .flex-column {
   flex-direction: column;
 }
+.flex-grow {
+  flex-grow: 1;
+}
 .justify-center {
   justify-content: center;
 }
@@ -38,4 +41,7 @@ img {
 }
 .tr {
   text-align: right;
+}
+.ttu {
+  text-transform: uppercase;
 }
