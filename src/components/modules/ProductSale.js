@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import classnames from 'classnames';
+import ScrollLockComponent from 'components/utils/scrollLockComponent';
 
 export default function ProductSale() {
   const [productColor, setProductColor] = useState('black');
@@ -114,6 +115,7 @@ export default function ProductSale() {
           setSizeSelectorOpen(false);
         }}
       ></div>
+      {sizeSelectorOpen && <ScrollLockComponent />}
     </div>
   );
 };

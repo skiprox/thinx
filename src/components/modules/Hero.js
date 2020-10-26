@@ -54,6 +54,14 @@ export default function Hero() {
           <img className="Hero__splash-image" src="/images/top/highwaist_black_side_1024x1024.jpg"></img>
           <img className="Hero__splash-image" src="/images/top/highwaist_black_back_1024x1024.jpg"></img>
         </section>
+        <ul className="Hero__splash-bullets flex justify-center items-center">
+          <li className="Hero__splash-bullet active"></li>
+          <li className="Hero__splash-bullet"></li>
+          <li className="Hero__splash-bullet"></li>
+          <li className="Hero__splash-bullet"></li>
+          <li className="Hero__splash-bullet"></li>
+          <li className="Hero__splash-bullet"></li>
+        </ul>
         <section className="Hero__inner Hero__inner--cta">
           <ProductSale />
         </section>

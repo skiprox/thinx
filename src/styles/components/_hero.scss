@@ -25,10 +25,13 @@
       }
     }
     &--splash {
-      order: 1;
+      order: 0;
       @media (query(lg-up)) {
         order: 2;
       }
+    }
+    &--splash-bullets {
+      order: 1;
     }
     &--info,
     &--cta {
@@ -45,6 +48,7 @@
     cursor: -moz-zoom-in;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
+    margin-bottom: 1rem;
     &.animate {
       img {
         visibility: hidden;
@@ -90,6 +94,22 @@
       right: 1rem;
       font-size: 200%;
       z-index: zIndex('high');
+    }
+    &-bullets {
+      margin-bottom: 3rem;
+      @media (quer(lg-up)) {
+        display: none;
+      }
+    }
+    &-bullet {
+      width: 0.3125rem;
+      height: 0.3125rem;
+      border-radius: 50%;
+      background-color: color('gray-dark');
+      margin: 0 0.296875rem;
+      &.active {
+        background-color: color('black');
+      }
     }
   }
 }
