@@ -5,6 +5,13 @@ import ProductDescription from 'components/modules/ProductDescription';
 import ProductSale from 'components/modules/ProductSale';
 
 export default function Hero() {
+  /**
+   * Refs and States
+   *
+   * splashContainer:  [REF] the container with all the images in it
+   * splashOpen:       [STATE] whether the images container is full screen fixed
+   * splashAnimate:    [STATE] whether we are currently opening or closing the splash container fixed state
+   */
   const splashContainer = useRef(null);
   const [splashOpen, setSplashOpen] = useState(false);
   const [splashAnimate, setSplashAnimate] = useState(false);
@@ -44,6 +51,7 @@ export default function Hero() {
             animate: splashAnimate
           })}
           onClick={(e) => {
+            // Clicking anywhere on the splash area opens it full screen
             toggleSplash(e);
           }}
         >
@@ -54,6 +62,8 @@ export default function Hero() {
           <img className="Hero__splash-image" src="/images/top/highwaist_black_side_1024x1024.jpg"></img>
           <img className="Hero__splash-image" src="/images/top/highwaist_black_back_1024x1024.jpg"></img>
         </section>
+        {/* mobile, presentation only: */}
+        {/* bullets (i guess to indicate that there are additional images??) */}
         <ul className="Hero__splash-bullets flex justify-center items-center">
           <li className="Hero__splash-bullet active"></li>
           <li className="Hero__splash-bullet"></li>
@@ -66,6 +76,8 @@ export default function Hero() {
           <ProductSale />
         </section>
       </div>
+      {/* if the splash is open we want to prevent scrolling on rest of the page */}
+      {/* and also show a close button */}
       {splashOpen && (
         <>
           <ScrollLockComponent />

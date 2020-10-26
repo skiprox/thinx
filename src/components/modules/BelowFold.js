@@ -1,6 +1,7 @@
 export default function BelowFold() {
   return (
     <article className="BelowFold">
+      {/* Container with a row of below the fold items */}
       <div className="Container Container--thin flex justify-between items-center">
         <div className="BelowFold__item">
           <img className="BelowFold__image BelowFold__image--medium" src="/images/bottom/thinx_productpage-04.jpg"></img>
@@ -13,6 +14,7 @@ export default function BelowFold() {
           <p className="BelowFold__description">heavy days</p>
         </div>
       </div>
+      {/* Container with a row of below the fold items */}
       <div className="Container Container--thin flex justify-center items-center">
         <div className="BelowFold__item">
           <img className="BelowFold__image BelowFold__image--medium" src="/images/bottom/thinx_productpage-05.jpg"></img>
@@ -20,6 +22,7 @@ export default function BelowFold() {
           <p className="BelowFold__description">heavy days</p>
         </div>
       </div>
+      {/* Container with a row of below the fold items */}
       <div className="Container Container--thin flex justify-between items-center">
         <div className="BelowFold__item">
           <img className="BelowFold__image BelowFold__image--medium" src="/images/bottom/thinx_productpage-07.jpg"></img>
