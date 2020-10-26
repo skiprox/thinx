@@ -48,6 +48,7 @@
     cursor: -moz-zoom-in;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     &.animate {
       img {
@@ -97,7 +98,7 @@
     }
     &-bullets {
       margin-bottom: 3rem;
-      @media (quer(lg-up)) {
+      @media (query(lg-up)) {
         display: none;
       }
     }
