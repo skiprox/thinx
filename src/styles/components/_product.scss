@@ -9,7 +9,7 @@
   }
   &__options {
     > li {
-      border: 1px solid color('black');
+      border: 0.0625rem solid color('black');
       box-sizing: border-box;
       &:first-child {
         border-right: none;
@@ -51,7 +51,7 @@
       width: 100%;
       padding: 0.5rem;
       &-wrapper {
-        border: 1px solid color('black');
+        border: 0.0625rem solid color('black');
       }
       &.active {
         .Product__size-chevron {
@@ -69,13 +69,13 @@
       left: 0;
       background-color: color('white');
       z-index: zIndex('medium');
-      border-top: 1px solid color('black');
+      border-top: 0.0625rem solid color('black');
       display: none;
       @media (query(lg-up)) {
         position: absolute;
         bottom: auto;
         top: 100%;
-        border: 1px solid color('black');
+        border: 0.0625rem solid color('black');
         border-top: none;
       }
       &.active {
@@ -99,7 +99,7 @@
       }
     }
     &-select {
-      border-bottom: 1px solid color('black');
+      border-bottom: 0.0625rem solid color('black');
       text-align: left;
       &:last-child {
         border-bottom: none;
@@ -121,7 +121,7 @@
     line-height: 1;
     margin-top: 1rem;
     &-link {
-      border-bottom: 1px solid color('black');
+      border-bottom: 0.0625rem solid color('black');
     }
   }
   &__purchase {
@@ -135,7 +135,7 @@
     margin-top: 2rem;
     line-height: 1.5;
     &-link {
-      border-bottom: 1px solid color('black');
+      border-bottom: 0.0625rem solid color('black');
     }
   }
 }

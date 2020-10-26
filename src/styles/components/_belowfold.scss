@@ -13,7 +13,7 @@
     display: inline-block;
     margin-top: 1rem;
     line-height: 1;
-    border-bottom: 1px solid color('black');
+    border-bottom: 0.0625rem solid color('black');
   }
   &__description {
     margin-top: 0.5rem;
@@ -22,12 +22,12 @@
     width: 100%;
     &--medium {
       @media (query(lg-up)) {
-        max-width: 432px;
+        max-width: 27rem;
       }
     }
     &--small {
       @media (query(lg-up)) {
-        max-width: 288px;
+        max-width: 18rem;
       }
     }
   }
