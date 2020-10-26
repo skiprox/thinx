@@ -67,6 +67,8 @@
       overflow: scroll;
       z-index: zIndex('high');
       background-color: color('gray');
+      margin-top: 0;
+      margin-bottom: 0;
       .Hero__splash-image {
         height: auto;
         width: 100%;
