@@ -1,6 +1,6 @@
 // next.config.js
 const withPlugins = require('next-compose-plugins')
-const withTM = require('next-transpile-modules')(['@channelstudio/loglogo'])
+const withTM = require('next-transpile-modules')([])
 const withSass = require('@zeit/next-sass')
 const withPurgeCss = require('next-purgecss')
 
@@ -14,12 +14,12 @@ const prodConfig = withPlugins(
       target: 'serverless',
       distDir: '.next',
       purgeCssPaths: [
-        'src/pages/**/*',
-        'src/components/**/*',
-        'src/svg/**/*'
+        'src/components/**/*'
       ],
       purgeCss: {
-        whitelist: () => []
+        whitelist: () => [
+          'active'
+        ]
       }
     })
   )

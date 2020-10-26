@@ -1,8 +1,5 @@
 // The modules
 import Head from 'next/head';
-import Header from 'components/site/Header';
-import Footer from 'components/site/Footer';
-
 export default function Layout({
   className = '',
   children
@@ -11,12 +8,9 @@ export default function Layout({
     <>
       <Head>
         <title>Thinx Coding Challenge</title>
-        <link rel="icon" type="image/png" href="" sizes="16x16" />
-        <link rel="icon" type="image/png" href="" sizes="32x32" />
-        <link rel="icon" type="image/png" href="" sizes="96x96" />
         <meta name="description" content="" />
         {/* Facebook */}
-        <meta name="og:title" content="" />
+        <meta name="og:title" content="Thinx Coding Challenge" />
         <meta property="og:url" content="" />
         <meta property="og:description" content="" />
         <meta property="og:image" content="" />
@@ -36,11 +30,9 @@ export default function Layout({
         <meta name="twitter:image:alt" content="" />
       </Head>
       <div className={`Body ${className}`}>
-        <Header />
         <main className="Main">
           {children}
         </main>
-        <Footer />
       </div>
     </>
   )
